@@ -117,6 +117,6 @@
     local_action: copy content="{{ join_command.stdout_lines[0] }}" dest="./join-command"
 
 
-   handlers:
+  handlers:
     - name: docker status
       service: name=docker state=started
